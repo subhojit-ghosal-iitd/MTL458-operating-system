@@ -194,30 +194,3 @@ void* p2 = malloc_buddy_alloc(5000);
 my_free(p1);
 my_free(p2);
 ```
-
----
-
-# Testing & Validation
-- **Shell:** Test pipes, redirects, wildcards, and built-ins directly.
-- **Schedulers:** Run offline tests with process lists; check CSVs in `results/`.
-- **Allocator:** Use `test_mem.c` and custom tests for fragmentation and behaviour under stress.
-
----
-
-# Known Limitations / TODO
-- Shell supports only **single** pipe.
-- Online schedulers rely on stdin; automated input harness can be added.
-- Allocator is **not thread-safe**.
-- More benchmarks and unit tests can be added.
-
----
-
-# Author
-**Subhojit**  
-Dual Degree (Maths & Computing), IIT Delhi — **Class of 2027**
-
----
-
-# License
-MIT License (recommended). Add a `LICENSE` file if required.
-
